@@ -1,0 +1,25 @@
+.shadow-3d {
+    box-shadow: .5rem .5rem 0 rgba(199, 201, 203, 0.5);
+}
+
+
+// BACKGROUND COLORS CLASSES
+.bg-dark-green {
+    background-color: $green-dark;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.bg-secondary {
+    background-color: $secondary;
+}
+
+.z-index-0 {
+    z-index: 0;
+}

@@ -1,4 +1,4 @@
-.PHONY: build_css
+.PHONY: css
 
-build_css:
-	sass scss:assets/css/
+css:
+	sass scss:css/

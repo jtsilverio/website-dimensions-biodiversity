@@ -1,0 +1,18 @@
+.hero-section {
+    min-height: 90vh;
+    overflow-x: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@include media-breakpoint-up(xxl) {
+    .hero-section{
+        min-width: 80%;
+        max-height: 80vh;
+        overflow: hidden;
+    }
+
+    .hero-section .display-1 {
+        font-size: 5.8rem;
+    }
+}

@@ -1,0 +1,91 @@
+.parallax-section {
+    position: relative;
+    height: 1px;
+    width: 100vw;
+}
+
+.parallax-imgs {
+    position: absolute;
+
+    &-000 {
+        //flor
+        width: 28%;
+        left: -10vw;
+        top: -150px;
+    }
+
+    &-001 {
+        //cipo
+        width: 25%;
+        left: 0;
+        top: -200px;
+    }
+
+    &-002 {
+        //folhas direita
+        width: 30%;
+        right: -10vw;
+        top: -250px;
+    }
+}
+
+
+@include media-breakpoint-down(lg) {
+    .parallax-imgs {
+        position: absolute;
+
+        &-000 {
+            //flor
+            width: 30%;
+            left: -10vw;
+            top: -50px;
+        }
+
+        &-001 {
+            //cipo
+            width: 35%;
+            left: 0;
+            top: -70px;
+        }
+
+        &-002 {
+            //folhas direita
+            width: 35%;
+            right: -10vw;
+            top: -70px;
+        }
+    }
+}
+
+
+
+.blob {
+    position: absolute;
+    z-index: 2222;
+
+    &-001 {
+        width: 35%;
+        left: -150px;
+        top: 45vh;
+    }
+
+    &-002 {
+        width: 25%;
+        left: -120px;
+        top: 75vh;
+    }
+}
+
+
+.text-clima {
+    background: rgb(61, 58, 180);
+    background: linear-gradient(180deg, rgba(206, 210, 234, 1.0) 0%, rgb(238, 235, 232) 100%);
+    padding-top: 5rem;
+}
+
+.section-met-campo{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    background-color: aquamarine;
+}

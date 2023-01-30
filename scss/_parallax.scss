@@ -1,0 +1,105 @@
+.parallax {
+    perspective: 100px;
+    height: 130vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //margin-left: -750px;
+}
+
+@include media-breakpoint-down(xl) {
+    .parallax {
+        height: 100vh;
+    }
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.parallax__bg{
+    background: #C9F8F1;
+}
+
+.parallax__cover {
+    background: #005448;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+    overflow: hidden;
+    margin-top: -2px;
+    padding-top: 10rem;
+}
+
+$parallax__layers: 7;
+@for $i from 0 through $parallax__layers {
+    $x: calc(($parallax__layers - $i) / 2);
+
+    .parallax__layer__#{$i} {
+        transform: translateZ(-100 * $x + 0px) scale($x + 1);
+    }
+}
+
+.parallax__layer__0{ // override to make it goes a little bit faster
+    transform: translateZ(-500px) scale(6);
+}
+
+
+
+.parallax-text{
+    position: absolute;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 20vh;
+    
+    h1 {
+      font-family: "Oswald";
+      font-size: 7rem;
+      font-weight: 900;
+      color: #027D6C;
+      text-transform: uppercase;
+      
+    }
+  
+    h2 {
+      margin-top: -15px;
+      position: relative;
+      font-family: "Oswald";
+      font-size: 3rem;
+      font-weight: 900;
+      color: $offwhite;
+      text-transform: uppercase;
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .parallax-text{
+        top: 40vh;
+
+        h1{
+            font-size: 10rem;
+        }
+    }
+  }

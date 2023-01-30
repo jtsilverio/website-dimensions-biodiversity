@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dimensions of Biodiversity</title>
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -41,77 +42,16 @@
             <div class="row align-items-center">
                 <div class="col-lg-5 text-center text-lg-start">
                     <h1 class="display-1 fw-bold lh-2 mb-3">HISTÓRIA E CONEXÕES DA MATA ATLÂNTICA</h1>
-                    <p class="col-lg-10 fs-6">Como aves e cavernas podem ajudar a contar o passado de um dos biomas mais
+                    <p class="col-lg-10 fs-8">Como aves e cavernas podem ajudar a contar o passado de um dos biomas mais
                         diversos do mundo.</p>
                 </div>
 
                 <div class="col-lg-7 col-md-10 mx-auto ">
-                    <img src="assets/img/video_player_placeholder.gif" class="d-block mx-lg-auto img-fluid"
-                        alt="Bootstrap Themes" loading="lazy">
+                    <lite-youtube videoid="3DC8INr7tvQ"></lite-youtube>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- PARALLAX ELEMENTS -->
-    <div class="container-fluid parallax-section">
-
-        <!-- ####### -->
-        <!-- right   -->
-        <!-- ####### -->
-
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="blob blob-001 rellax"
-            data-rellax-speed="1">
-            <path fill="#A7F0BA"
-                d="M25.7,-22.4C36.9,-6.4,52.1,4.5,53.9,18.6C55.7,32.8,44.1,50.2,28.1,57.6C12.1,65,-8.3,62.3,-24.8,53.6C-41.2,44.8,-53.6,30,-56.5,13.9C-59.4,-2.2,-52.7,-19.4,-41.7,-35.3C-30.7,-51.2,-15.3,-65.7,-4,-62.5C7.2,-59.3,14.5,-38.3,25.7,-22.4Z"
-                transform="translate(100 100)" />
-        </svg>
-
-        <img src="https://uploads-ssl.webflow.com/5f4e8114a9640d4aa2c637c4/60301029f168817437e704b1_sticker-footer-leaves-export-8.png"
-            loading="lazy" alt="" class="rellax leaf leaf-000" data-rellax-speed="-2">
-
-        <img src="https://uploads-ssl.webflow.com/5f4e8114a9640d4aa2c637c4/60301029f3cb2f1cef7f16bc_sticker-footer-leaves-export-7.png"
-            loading="lazy" alt="" class="rellax leaf leaf-001" data-rellax-speed="-1">
-
-
-
-        <!-- ####### -->
-        <!-- left   -->
-        <!-- ####### -->
-        <svg width="1000" height="1000" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
-            class="blob blob-002 rellax" data-rellax-speed="1">
-            <defs>
-                <filter id="grain" x="-50vw" y="-50vh" width="100vw" height="100vh">
-                    <feFlood flood-color="#ffffff" result="neutral-gray" />
-
-                    <feTurbulence in="neutral-gray" type="fractalNoise" baseFrequency="2.5" numOctaves="100"
-                        stitchTiles="stitch" result="noise" />
-
-                    <feColorMatrix in="noise" type="saturate" values="0" result="destaturatedNoise"></feColorMatrix>
-
-                    <feComponentTransfer in="desaturatedNoise" result="theNoise">
-                        <feFuncA type="table" tableValues="0 0 0.3 0"></feFuncA>
-                    </feComponentTransfer>
-
-                    <feBlend in="SourceGraphic" in2="theNoise" mode="soft-light" result="noisy-image" />
-                </filter>
-
-                <clipPath id="shape">
-                    <path fill="currentColor"
-                        d="M801,697.5Q628,895,454,777.5Q280,660,189,434Q98,208,339.5,228.5Q581,249,777.5,374.5Q974,500,801,697.5Z">
-                    </path>
-                </clipPath>
-            </defs>
-
-            <g filter="url(#grain)" clip-path="url(#shape)">
-                <path fill="#8fb78b"
-                    d="M801,697.5Q628,895,454,777.5Q280,660,189,434Q98,208,339.5,228.5Q581,249,777.5,374.5Q974,500,801,697.5Z" />
-            </g>
-        </svg>
-
-        <img src="assets/img/p1/leaf-01.png" loading="lazy" alt="" class="rellax leaf leaf-002" data-rellax-speed="-1">
-
-    </div>
 
     <!-- SVG WAVES -->
     <div class="wave">
@@ -147,48 +87,82 @@
         </svg>
     </div>
 
+    <div class="parallax-section">
+        <!-- left  -->
+        <img src="assets/img/parallax/flor3.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-000"
+            data-rellax-speed="-1">
+
+        <img src="assets/img/parallax/cipo.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-001"
+            data-rellax-speed="0">
+
+        <!-- right   -->
+        <img src="assets/img/parallax/folhas.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-002"
+            data-rellax-speed="-1">
+    </div>
+
     <!-- Content Section -->
     <div class="container-fluid ">
         <div class="container text-section">
             <h1 class="mb-4 pt-4">Conexões das florestas</h1>
             <p>
-                A <a href="http://"> Mata Atlântica</a> nem sempre foi solitária como conhecemos hoje. Ela é uma das
-                três principais florestas
-                úmidas da América do Sul, junto com a Floresta Amazônica e a Floresta Andina. Essas três florestas estão
-                separadas pelas áreas mais secas e com poucas árvores dos biomas Caatinga, Cerrado e Chaco, que formam a
-                chamada “diagonal seca”.
+                A Mata Atlântica nem sempre foi isolada como é hoje. Ela é uma das três principais florestas úmidas da
+                América do Sul, junto com a Floresta Amazônica e a Floresta Andina. Essas três florestas estão separadas
+                pelas áreas mais secas e com poucas árvores dos biomas Caatinga, Cerrado e Chaco, que formam a chamada
+                “diagonal seca”.
             </p>
+
+            <figure class="figure" data-aos="fade-in">
+                <img src="assets/img/P1/Corredor-Seco.png" class="figure-img img-fluid rounded" alt="">
+                <figcaption class="figure-caption">Mapa ilustrando a diagonal de biomas secos que a Caatinga, Cerrado e
+                    Chaco formam ao longo da América do Sul.</figcaption>
+            </figure>
+
             <p>
                 Apesar de não serem ligadas atualmente, essas florestas tropicais compartilham uma história: algumas de
-                suas espécies de animais e plantas são muito próximas entre si. Esse parentesco pode indicar alguma
-                ligação entre Mata Atlântica, Amazônia e Floresta Andina no passado?
+                suas espécies de animais e plantas são muito próximas entre si. Esse parentesco próximo pode indicar
+                alguma ligação entre Mata Atlântica, Amazônia e Floresta Andina no passado?
             </p>
             <p>
                 Existe uma espécie de pássaro que pode ajudar a responder essa pergunta. O Trichothraupis melanops,
                 conhecido como tiê-de-topete, é um passarinho de cara preta e topete amarelo que vive tanto na Mata
                 Atlântica quanto na Floresta Andina.
             </p>
-            <p>
-                Esse estudo, além de confirmar um parentesco entre os tiê-de-topete das duas florestas, concluiu que a
-                rota por onde esses animais migraram foi num caminho entre o sul do Cerrado e o norte do Chaco, onde
-                hoje está o Paraguai e o sul da Bolívia.
-            </p>
-            <p>
-                Outros estudos do projeto AF Biota também chegaram em rotas parecidas. Mais espécies de aves, lagartos e
-                até plantas se dispersaram usando esta região, o que evidencia ainda mais uma possível conexão no
-                passado.
+
+            <p>Para investigar o parentesco entre várias populações desse pequeno pássaro, um grupo de pesquisadores
+                tirou um pouco de sangue de indivíduos de tiê-de-topete da Floresta Andina e da Mata Atlântica.
+                Compararam seus DNAs e fizeram análises estatísticas para calcular sua probabilidade de parentesco.
             </p>
 
             <figure class="figure" data-aos="fade-in">
-                <img src="assets/img/p1/metodologia.png" class="figure-img img-fluid rounded" alt="">
-                <figcaption class="figure-caption">Para investigar seu parentesco, um grupo de
-                    pesquisadores pegou indivíduos de tiê-de-topete da Floresta Andina e da Mata Atlântica. Compararam
-                    seus DNAs e fizeram análises estatísticas para calcular sua probabilidade de parentesco.
-                </figcaption>
+                <img src="assets/img/P1/1.1_AvesTransp.png" class="figure-img img-fluid rounded" alt="">
+                <figcaption class="figure-caption">O primeiro passo para o estudo é a captura dos indivíduos de
+                    tiê-de-topete, usando redes de neblina, como essa ilustrada na imagem.</figcaption>
             </figure>
+
+            <figure class="figure" data-aos="fade-in">
+                <img src="assets/img/P1/1.2_AvespegasTransp.png" class="figure-img img-fluid rounded" alt="">
+                <figcaption class="figure-caption">Vários indivíduos desses pássaros são capturados,
+                    catalogados, guardados em coleções e têm seu DNA analisado.</figcaption>
+            </figure>
+
+            <p>
+                Esse estudo, além de confirmar um parentesco entre os tiê-de-topete das duas florestas, concluiu que a
+                rota por onde esses animais se dispersaram foi em alguma área entre o sul do Cerrado e o norte do Chaco,
+                próximo onde hoje estão o Paraguai e o sul da Bolívia.
+            </p>
+
+            <p>
+                Outros estudos do projeto AF Biota também encontraram rotas parecidas. Mais espécies de aves, lagartos e
+                até plantas se dispersaram através da diagonal seca, o que reforça uma possível conexão da Mata
+                Atlântica e a Amazônia no passado.
+            </p>
+
+            <figure class="figure" data-aos="fade-in">
+                <img src="assets/img/P1/1.2_AvesGeneticaPrancheta-1.png" class="figure-img img-fluid rounded" alt="">
+            </figure>
+
         </div>
     </div>
-
 
     <div data-aos="fade-in">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 190 1440 110" class="wave-clima">
@@ -201,40 +175,42 @@
             <div class="container text-section">
                 <h1 class="mb-4 pt-4">O clima em transformação</h1>
                 <p>
-                    Essa conexão entre biomas só foi possível porque o clima no planeta nem sempre foi o mesmo. De 2,5
-                    milhões de anos atrás para cá, nosso planeta passou por períodos glaciais. A queda na temperatura e
-                    mudança na umidade foram condições importantes para definir o clima da América do Sul da época. A
-                    região
-                    onde hoje fica o centro-leste do Brasil teve um aumento no regime de chuvas durante esse período.
-                    Esse
-                    aumento da chuva deu as condições para que uma região seca passasse a ser úmida em poucas décadas. A
-                    vegetação mudou e a Floresta Atlântica expandiu, criando corredores de mata que se encontraram com
-                    as
-                    outras florestas úmidas da América do Sul.
+                    Essa conexão entre biomas só foi possível porque o clima no planeta nem sempre foi o mesmo. Por
+                    exemplo, de 2,5 milhões de anos atrás para cá, nosso planeta passou por períodos glaciais e
+                    interglaciais. A mudança na temperatura e na umidade foi importante para definir a paisagem da
+                    América do Sul da época. Por exemplo, a região centro-leste do Brasil teve um aumento no regime de
+                    chuvas desde o último período glacial (há 71 mil anos). Esse aumento da chuva deu as condições para
+                    que uma região seca passasse a ser úmida em poucas décadas. A vegetação mudou e a Mata Atlântica
+                    expandiu, criando corredores de mata que se encontraram com as outras florestas úmidas da América do
+                    Sul.
                 </p>
 
                 <p>
                     Esse encontro pode ter sido bem recente e por mais de uma vez. Em 2013, um estudo comparou a
-                    presença e
-                    parentesco de um grupo de aves - chamados de suboscines - que estão presentes tanto na Mata
-                    Atlântica
-                    quanto na Amazônia. Os resultados apontaram para dois possíveis caminhos que um dia conectaram essas
-                    duas florestas: uma conexão recente na região nordeste do Cerrado - há cerca de 5,3 milhões de anos
-                    - e
-                    uma mais antiga, na região onde hoje é o sul do Cerrado e o Chaco (Bolívia e Paraguai) - há cerca de
-                    14.5 milhões de anos.
+                    presença e parentesco de um grupo de aves - chamados de suboscines - que estão presentes tanto na
+                    Mata Atlântica quanto na Amazônia. Os resultados apontaram para dois possíveis caminhos que um dia
+                    conectaram essas duas florestas: uma conexão recente na região nordeste do Cerrado - há menos de 5
+                    milhões de anos atrás - e uma mais antiga, na região onde hoje é o sul do Cerrado e o Chaco (Bolívia
+                    e Paraguai) - há cerca de 15 a 5 milhões de anos atrás.
                 </p>
 
                 <p>
                     Assim, essas três florestas úmidas têm muitas histórias compartilhadas. Diferentes momentos do
-                    passado
-                    que permitiram conexões, como os corredores que os tiês-de-topete e muitos outros seres vivos usaram
-                    como caminho para pular de um bioma para o outro.
+                    passado que permitiram conexões, como os corredores que os tiês-de-topete e muitos outros seres
+                    vivos usaram como caminho para se dispersar de um bioma para o outro.
                 </p>
 
                 <figure class="figure">
-                    <img src="assets/img/p1/historia.jpeg" class="figure-img img-fluid rounded min-w-100" alt="...">
-                    <figcaption class="figure-caption">Essa imagem se tornará um gif animado.</figcaption>
+                    <img src="assets/img/P1/Rotas_fundobranco.gif" class="figure-img img-fluid rounded min-w-100"
+                        alt="...">
+                    <figcaption class="figure-caption">Representação das rotas de migração que as espécies fizeram há
+                        milhões de anos atrás. Cada pássaro representa uma população daquela espécie. As áreas verdes
+                        representam áreas de floresta úmida que crescem e se retraem ao longo do tempo. O surgimento de
+                        corredores de áreas verdes permite a migração dessas populações. Note que o primeiro corredor
+                        surge na parte sul da Mata Atlântica (15 a 5 milhões de anos atrás), posteriormente (há 5
+                        milhões de anos) surge um novo corredor verde no norte desta floresta. Esse processo gerou boa
+                        parte da diversidade de espécies que observamos hoje.
+                    </figcaption>
                 </figure>
             </div>
         </div>
@@ -246,6 +222,60 @@
         </svg>
     </div>
 
+    <footer class="footer pt-5 pb-2">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h4 class="mb-3">Agradecimentos</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                            voluptatem veniam, est atque cumque eum delectus sint!
+                        </p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h4 class="mb-3">links</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!">Frequently Asked Questions</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!">Delivery</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!">Where we deliver?</a>
+                            </li>
+                        </ul>
+                </div>
+    
+                <!-- <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-1">opening hours</h5>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Mon - Fri:</td>
+                                        <td>8am - 9pm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sat - Sun:</td>
+                                        <td>8am - 1am</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div> -->
+            </div>
+        </div>
+        <hr />
+        <div class="text-center p-3 h6" style="margin-bottom: 0;">
+            <small>
+                Dimensions of Biodiversity - 2023
+            </small>
+        </div>
+        <!-- Copyright -->
+    </footer>
 
     <!-- SCRIPTS -->
     <!-- AOS -->

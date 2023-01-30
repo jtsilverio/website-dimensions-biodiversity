@@ -1,0 +1,66 @@
+// SITE SECTIONS
+.text-section {
+    z-index: 99999;
+    max-width: 53rem;
+    position: relative;
+
+    h1 {
+        font-weight: bold;
+    }
+
+    img {
+        margin-top: 2.5rem;
+        width: 100%;
+        width: auto;
+    }
+
+    .figure-caption {
+        font-size: medium;
+        font-family: "PT Sans", sans-serif;
+        margin-bottom: 2.5rem;
+    }
+
+    a {
+        background:
+            linear-gradient(to bottom,
+                $primary 0%,
+                $primary 100%);
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        color: $primary;
+        text-decoration: none;
+        transition: background-size .2s;
+    }
+    
+    a:hover {
+        background-size: 4px 50px;
+        color: $offwhite;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .text-section {
+        padding: 0;
+
+        img{
+            margin-left: -3rem;
+            max-width: 56rem;
+            min-width: 56rem;
+        }
+
+        .figure-caption {
+            margin-left: -3rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .section-met-campo {
+        .figure{
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
+    }
+}
+

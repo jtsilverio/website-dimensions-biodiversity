@@ -2,7 +2,6 @@
 .navbar {
   //box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
   font-family: "Oswald", sans-serif;
-  border-bottom: 1px solid rgba(255, 255, 255, .08);
   transition: all .1s linear;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -20,4 +19,8 @@
 
 .navbar-nav > .active {
   color: $yellow !important;
+}
+
+.navbar-home{
+  font-size: x-large;
 }

@@ -1,0 +1,41 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 18 | / @include media-breakpoint-up(xxl) {
+ * 19 | |     .parallax-imgs {
+ * 20 | |         position: absolute;
+ * 21 | | 
+ * 22 | |         &-000 {
+ * 23 | |             //flor
+ * 24 | |             width: 28%;
+ * 25 | |             left: -10vw;
+ * 26 | |             top: 50px;
+ * 27 | |         }
+ * 28 | | 
+ * 29 | |         &-001 {
+ * 30 | |             //cipo
+ * 31 | |             width: 25%;
+ * 32 | |             left: 0;
+ * 33 | |             top: -200px;
+ * 34 | |         }
+ * 35 | | 
+ * 36 | |         &-002 {
+ * 37 | |             //folhas direita
+ * 38 | |             width: 30%;
+ * 39 | |             right: -250px;
+ * 40 | |             top: -500px;
+ * 41 | |         }
+ * 42 | |     }
+ * 43 | \ }
+ *    '
+ *   scss/P01.scss 18:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 18 \2502  \250c  @include media-breakpoint-up(xxl) {\a 19 \2502  \2502      .parallax-imgs {\a 20 \2502  \2502          position: absolute;\a 21 \2502  \2502  \a 22 \2502  \2502          &-000 {\a 23 \2502  \2502              //flor\a 24 \2502  \2502              width: 28%;\a 25 \2502  \2502              left: -10vw;\a 26 \2502  \2502              top: 50px;\a 27 \2502  \2502          }\a 28 \2502  \2502  \a 29 \2502  \2502          &-001 {\a 30 \2502  \2502              //cipo\a 31 \2502  \2502              width: 25%;\a 32 \2502  \2502              left: 0;\a 33 \2502  \2502              top: -200px;\a 34 \2502  \2502          }\a 35 \2502  \2502  \a 36 \2502  \2502          &-002 {\a 37 \2502  \2502              //folhas direita\a 38 \2502  \2502              width: 30%;\a 39 \2502  \2502              right: -250px;\a 40 \2502  \2502              top: -500px;\a 41 \2502  \2502          }\a 42 \2502  \2502      }\a 43 \2502  \2514  }\a    \2575 \a   scss/P01.scss 18:1  root stylesheet";
+}

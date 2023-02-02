@@ -1,11 +1,11 @@
 .parallax {
     perspective: 100px;
-    height: 130vh;
+    height: 140vh;
     overflow-x: hidden;
     overflow-y: auto;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -5px;
     right: 0;
     bottom: 0;
     //margin-left: -750px;

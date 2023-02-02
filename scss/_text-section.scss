@@ -27,15 +27,15 @@
                 $primary 100%);
         background-position: 0 100%;
         background-repeat: repeat-x;
-        background-size: 4px 4px;
+        background-size: 2px 2px;
         color: $primary;
         text-decoration: none;
-        transition: background-size .2s;
+        //transition: background-size .25s;
     }
     
     a:hover {
-        background-size: 4px 50px;
-        color: $offwhite;
+        background-size: 4px 4px;
+        //color: $offwhite;
     }
 }
 
@@ -64,3 +64,6 @@
     }
 }
 
+[data-tooltip] {
+    border-bottom: solid #02923D 2px;
+}

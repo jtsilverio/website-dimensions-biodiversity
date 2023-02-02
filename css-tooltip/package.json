@@ -1,0 +1,52 @@
+{
+  "name": "css-tooltip",
+  "version": "0.3.4",
+  "description": "Only CSS lightweight, minimal and simple tooltips",
+  "main": "dist/css-tooltip.min.css",
+  "browserslist": [
+    "> 1%",
+    "last 1 version",
+    "Firefox ESR",
+    "not dead"
+  ],
+  "postcss": {
+    "parser": "sugarss",
+    "map": false,
+    "plugins": {
+      "autoprefixer": {},
+      "cssnano": {}
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && gulp build",
+    "watch": "gulp watch",
+    "version": "npm run build && git add -A dist/",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alterebro/css-tooltip.git"
+  },
+  "keywords": [
+    "CSS",
+    "tooltip",
+    "lightweight",
+    "minimal",
+    "simple"
+  ],
+  "author": "Jorge Moreno @alterebro (moro.es)",
+  "bugs": {
+    "url": "https://github.com/alterebro/css-tooltip/issues"
+  },
+  "homepage": "https://alterebro.github.io/css-tooltip/",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1"
+  }
+}

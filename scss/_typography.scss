@@ -15,13 +15,16 @@
         margin-top: 1.2rem;
         text-transform: none;
 
-        @include media-breakpoint-up(lg) {
-            font-size: 1.4rem;
-            display: inline-block;
+    }
 
-        }
+    @include media-breakpoint-up(xxl) {
+            font-size: 8rem !important;
     }
 }
+
+
+
+
 
 .display-2 {
     margin-bottom: 1rem;

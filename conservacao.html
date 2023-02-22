@@ -11,6 +11,8 @@
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer@1.5.0/dist/image-compare-viewer.min.css">
+    <script src="https://unpkg.com/image-compare-viewer@1.5.0/dist/image-compare-viewer.min.js"></script>
 </head>
 
 <body>
@@ -41,14 +43,14 @@
         <div class="hero-section container d-flex justify-content-center text-white align-items-center">
             <div class="row align-items-center w-100">
                 <div class="col-lg-5 text-center text-lg-start">
-                    <h1 class="display-1 fw-bold lh-2 mb-3">CONSERVAÇÃO E MUDANÇAS CLIMÁTICAS</h1>
+                    <h1 class="display-1 fw-bold lh-2 mb-3">CONSER&shy;VAÇÃO E MUDAN&shy;ÇA CLIMÁ&shy;TICA</h1>
                     <p class="col-lg-10 fs-8">Estudar o passado e o presente de uma das Florestas mais diversas e mais
                         devastadas do mundo pode ajudar a pensar em como conservá-la para o futuro.
                     </p>
                 </div>
 
                 <div class="col-lg-7 col-md-10 mx-auto ">
-                    <lite-youtube videoid="3DC8INr7tvQ"></lite-youtube>
+                    <lite-youtube videoid="YShsVXD4LWg"></lite-youtube>
                 </div>
             </div>
         </div>
@@ -90,15 +92,14 @@
 
     <div class="parallax-section">
         <!-- left  -->
-        <img src="assets/img/parallax/flor3.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-000"
+        <!-- <img src="assets/img/parallax/flor3.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-000"
             data-rellax-speed="-1">
 
         <img src="assets/img/parallax/cipo.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-001"
             data-rellax-speed="0">
 
-        <!-- right   -->
         <img src="assets/img/parallax/folhas.png" loading="lazy" alt="" class="rellax parallax-imgs parallax-imgs-002"
-            data-rellax-speed="-1">
+            data-rellax-speed="-1"> -->
     </div>
 
     <!-- Content Section -->
@@ -108,16 +109,30 @@
             <p>
                 Como os animais e plantas da Mata Atlântica vão responder às atuais mudanças climáticas e desmatamento?
                 Para responder a essa pergunta, são necessárias informações de diferentes áreas do conhecimento. Por
-                isso, o projeto AF Biota reuniu pesquisas das áreas de 
-                <span data-tooltip="Processo pelo qual os seres vivos se modificam ao longo do tempo.">evolução</span>,
-                <span data-tooltip="Ciência que estuda a transmissão das características dos seres vivos para seus descendentes, ou seja, a hereditariedade.">genética</span>
-                de populações, 
-                <span data-tooltip="Ciência que estuda as funções e os processos físico-químicos que ocorrem nas células, tecidos, órgãos e sistemas dos seres vivos.">fisiologia</span>,
-                <span data-tooltip="Ciência que trata da descrição da Terra e do estudo dos fenômenos físicos, biológicos e humanos que nela ocorrem, suas causas e relações.">geografia</span>,
-                <span data-tooltip="Ciência que estuda a Terra quanto à sua origem, composição e estrutura ao longo do tempo.">geologia</span>,
-                <span data-tooltip="Ciência que estuda os seres vivos que viveram num passado remoto da Terra.">paleontologia</span>,
-                <span data-tooltip="Ciência que estuda as relações evolutivas entre diferentes espécies e organismos por métodos matemáticos.">filogenética</span>
-                e <span data-tooltip="Sensoriamento remoto">sensoriamento remoto</span>.
+                isso, o projeto AF Biota reuniu pesquisas das áreas de
+                <span class="tooltip-multiline"
+                    data-tooltip="Processo pelo qual os seres vivos se modificam ao longo do tempo.">evolução
+                    💬</span>,
+                <span class="tooltip-multiline"
+                    data-tooltip="Ciência que estuda a transmissão das características dos seres vivos para seus descendentes, ou seja, a hereditariedade.">genética
+                    de populações 💬</span>,
+                <span class="tooltip-multiline"
+                    data-tooltip="Ciência que estuda as funções e os processos físico-químicos que ocorrem nas células, tecidos, órgãos e sistemas dos seres vivos.">fisiologia
+                    💬</span>,
+                <span class="tooltip-multiline"
+                    data-tooltip="Ciência que trata da descrição da Terra e do estudo dos fenômenos físicos, biológicos e humanos que nela ocorrem, suas causas e relações.">geografia
+                    💬</span>,
+                <span class="tooltip-multiline"
+                    data-tooltip="Ciência que estuda a Terra quanto à sua origem, composição e estrutura ao longo do tempo.">geologia
+                    💬</span>,
+                <span class="tooltip-multiline"
+                    data-tooltip="Ciência que estuda os seres vivos que viveram num passado remoto da Terra.">paleontologia
+                    💬</span>,
+                <span class="tooltip-multiline"
+                    data-tooltip="Ciência que estuda as relações evolutivas entre diferentes espécies e organismos por métodos matemáticos.">filogenética
+                    💬</span>
+                e <span class="tooltip-multiline tooltip-bottom-right" data-tooltip="Uma abordagem técnica dedicada à observação de nosso planeta (Ex: GPS). São utilizados instrumentos que provêm desde a localização precisa de ambientes, como por exemplo, onde está e qual é o tamanho de uma ilha oceânica, até o mapeamento de características desses ambientes, porque alteram o espectro luminoso recebido do sol. Isso quer dizer que cada comprimento de onda da luz solar é alterado de forma diferente, de acordo com o que existe na superfície. Assim, se torna possível quantificar a cobertura vegetal da floresta e até monitorar a ocorrência de florações de microalgas em corpos de água, dentre muitas aplicações.
+                ">sensoriamento remoto 💬</span>.
             </p>
 
             <p>
@@ -179,44 +194,65 @@
                 diversidade dessas espécies, a prioridade de conservação seria a de ter um maior número de áreas sendo
                 conservadas, em vez de se preservar uma única e grande área.
             </p>
+            <!-- 
+            <figure class="figure" data-aos="fade-in">
+                <img src="assets/img/P5/P5.2-semarvoresP5.2_a_cut01.png" class="figure-img img-fluid rounded" alt="">
+                <figcaption class="figure-caption"></figcaption>
+            </figure>      -->
 
-            <p>
-                Conhecer um bioma tão diverso como a Mata Atlântica é um trabalho que exige conhecimento de todas as
-                partes que compõem esse sistema tão complexo. Os estudos interdisciplinares do AF Biota são importantes
-                ferramentas para compor esse quebra-cabeças que é a Mata Atlântica, sua história, suas espécies e seu
-                clima. Com essas informações, podem surgir medidas e propostas realmente eficazes para a conservação e
-                recuperação desse bioma.
-            </p>
+            <div class="figure" id="image-compare">
+                <img class="img-fluid" src="assets/img/P5/slide-p5-02.png" alt="">
+                <img class="img-fluid" src="assets/img/P5/slide-p5-01.png" alt="">
+            </div>
 
+            <div>
+                <p>
+                    Conhecer um bioma tão diverso como a Mata Atlântica é um trabalho que exige conhecimento de todas as
+                    partes que compõem esse sistema tão complexo. Os estudos interdisciplinares do AF Biota são
+                    importantes
+                    ferramentas para compor esse quebra-cabeças que é a Mata Atlântica, sua história, suas espécies e
+                    seu
+                    clima. Com essas informações, podem surgir medidas e propostas realmente eficazes para a conservação
+                    e
+                    recuperação desse bioma.
+                </p>
+
+            </div>
         </div>
     </div>
-
 
     <footer class="footer pt-5 pb-2">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4">
-                    <h4 class="mb-3">Agradecimentos</h5>
+                    <h4 class="mb-3">Finaciamento</h5>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                            voluptatem veniam, est atque cumque eum delectus sint!
+                            O projeto AF Biota foi financiado pelo Programa Biota da Fundação de Amparo à
+                            Pesquisa do Estado de São Paulo (FAPESP) e pelo Programa <i>Dimensions of Biodiversity</i> 
+                            financiado pela <i>National Science Foundation (NSF, Estados Unidos da América - EUA)</i>  e
+                            <i> National Aeronautics and Space Administration” (NASA, EUA)</i>.
                         </p>
                 </div>
                 <div class="col-lg-6 col-md-12 mb-4">
-                    <h4 class="mb-3">links</h5>
+                    <h4 class="mb-3">Links</h5>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-1">
-                                <a href="#!">Frequently Asked Questions</a>
+                                <a href="conexoes.html">Conexões</a>
                             </li>
                             <li class="mb-1">
-                                <a href="#!">Delivery</a>
+                                <a href="passado.html">Passado</a>
                             </li>
                             <li class="mb-1">
-                                <a href="#!">Pricing</a>
+                                <a href="origens.html">Origens</a>
                             </li>
                             <li>
-                                <a href="#!">Where we deliver?</a>
+                                <a href="biodiversidade.html">Biodiversidade</a>
+                            </li>
+                            <li>
+                                <a href="conservacao.html">Convervação</a>
+                            </li>
+                            <li>
+                                <a href="frutos.html">Frutos</a>
                             </li>
                         </ul>
                 </div>
@@ -241,7 +277,7 @@
         <hr />
         <div class="text-center p-3 h6" style="margin-bottom: 0;">
             <small>
-                Dimensions of Biodiversity - 2023
+                AF Biota - 2023
             </small>
         </div>
         <!-- Copyright -->
@@ -276,10 +312,45 @@
     </script>
 
     <!-- RELLAX -->
-    <script src="rellax/rellax.min.js"></script>
+    <!-- <script src="rellax/rellax.min.js"></script>
     <script>
         // Accepts any class name
         var rellax = new Rellax('.rellax');
+    </script> -->
+
+    <script>
+        const options = {
+
+            // UI Theme Defaults
+
+            controlColor: "#FFFFFF",
+            controlShadow: true,
+            addCircle: true,
+            addCircleBlur: true,
+
+            // Label Defaults
+
+            showLabels: true,
+            labelOptions: {
+                before: 'Poucas Unidades <br> Grande Área',
+                after: 'Muitas Unidades <br> Pequena Área',
+                onHover: false
+            },
+
+            // Smoothing
+
+            smoothing: false,
+            smoothingAmount: 100,
+
+            // Other options
+
+            hoverStart: false,
+            verticalMode: false,
+            startingPoint: 50,
+            fluidMode: false
+        };
+        const element = document.getElementById("image-compare");
+        const viewer = new ImageCompare(element, options).mount();
     </script>
 
 </body>

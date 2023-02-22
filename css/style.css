@@ -7,7 +7,9 @@
  */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11556,7 +11558,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 [data-tooltip].tooltip-multiline:before {
   width: 100vw;
-  max-width: 240px;
+  max-width: 500px;
   white-space: normal;
 }
 [data-tooltip][class*=tooltip-bottom]:before, [data-tooltip][class*=tooltip-bottom]:after {
@@ -11715,8 +11717,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .display-2 {
   margin-bottom: 1rem;
-  text-transform: capitalize;
-  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
 }
 .display-2--intro {
   display: inline-block;
@@ -11731,7 +11733,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media (min-width: 992px) {
   .display-2--description {
-    font-size: 1.4rem;
+    font-size: 11rem;
     display: inline-block;
   }
 }
@@ -11850,21 +11852,30 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 .text-section {
   z-index: 99999;
-  max-width: 53rem;
+  max-width: 50rem;
   position: relative;
+}
+@media (min-width: 992px) {
+  .text-section {
+    padding: 0;
+  }
 }
 .text-section h1, .text-section .h1 {
   font-weight: bold;
 }
-.text-section img {
+.text-section .figure {
   margin-top: 2.5rem;
-  width: 100%;
-  width: auto;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 992px) {
+  .text-section .figure {
+    margin-left: -2rem;
+    width: 54rem;
+  }
 }
 .text-section .figure-caption {
   font-size: medium;
   font-family: "PT Sans", sans-serif;
-  margin-bottom: 2.5rem;
 }
 .text-section a {
   background: linear-gradient(to bottom, #00473e 0%, #00473e 100%);
@@ -11878,25 +11889,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   background-size: 4px 4px;
 }
 
-@media (min-width: 992px) {
-  .text-section {
-    padding: 0;
-  }
-  .text-section img {
-    margin-left: -3rem;
-    max-width: 56rem;
-    min-width: 56rem;
-  }
-  .text-section .figure-caption {
-    margin-left: -3rem;
-  }
-}
-@media (min-width: 992px) {
-  .section-met-campo .figure {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-}
 [data-tooltip] {
   border-bottom: solid #02923D 2px;
 }
@@ -12014,7 +12006,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 .parallax {
   perspective: 100px;
-  height: 140vh;
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -12054,11 +12045,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   top: 100%;
   left: 0;
   right: 0;
-  height: 2000px;
   z-index: 2;
-  overflow: hidden;
+  overflow: auto;
   margin-top: -2px;
-  padding-top: 10rem;
+  padding-top: 20rem;
+  padding-bottom: 10rem;
+}
+@media (max-width: 1199.98px) {
+  .parallax__cover {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .parallax__cover {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .parallax__layer__0 {
@@ -12102,13 +12105,21 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   vertical-align: middle;
   text-align: center;
   margin: auto;
-  left: 0;
-  right: 0;
-  top: 20vh;
+  margin-bottom: 5rem;
+  top: 15vh;
+}
+@media (min-width: 992px) {
+  .parallax-text {
+    top: 30vh;
+  }
+}
+@media (min-width: 1400px) {
+  .parallax-text {
+    top: 25vh;
+  }
 }
 .parallax-text h1, .parallax-text .h1 {
   font-family: "Oswald";
-  font-size: 7rem;
   font-weight: 900;
   color: #027D6C;
   text-transform: uppercase;
@@ -12124,9 +12135,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 
 @media (min-width: 1400px) {
-  .parallax-text {
-    top: 40vh;
-  }
   .parallax-text h1, .parallax-text .h1 {
     font-size: 10rem;
   }
@@ -12145,6 +12153,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
+  padding: 0 !important;
 }
 
 .home-card {
@@ -12152,7 +12161,7 @@ body {
   background-color: #FFF;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
   margin: 10px auto;
   cursor: pointer;
@@ -12203,6 +12212,147 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.card-especie {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: -0.01rem;
+  line-height: normal;
+  font-size: medium;
+  background-image: radial-gradient(at 53% 61%, hsl(171deg, 56%, 50%) 0px, transparent 50%), radial-gradient(at 92% 83%, hsl(41deg, 85%, 79%) 0px, transparent 70%);
+  border-radius: 20px;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  overflow: hidden;
+}
+@media (min-width: 1400px) {
+  .card-especie {
+    font-size: large;
+  }
+}
+.card-especie .col-card {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media (min-width: 992px) {
+  .card-especie .col-left {
+    padding-left: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .card-especie .col-center {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.card-especie .col-right {
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.card-especie .col-right .row {
+  height: 100%;
+}
+.card-especie .col-right .col-right-text {
+  padding: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 2rem;
+  color: #f2f7f5;
+  background-color: #00473E;
+  margin-left: -5px;
+}
+@media (max-width: 575.98px) {
+  .card-especie .col-right .col-right-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.card-especie .col-right .col-right-img-container {
+  background-image: url("../assets/img/P4/border-svg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  min-height: 120px;
+}
+@media (max-width: 991.98px) {
+  .card-especie .col-right .col-right-img-container {
+    background-image: url("../assets/img/P4/border-svg-horz.svg");
+  }
+}
+
+/* COLOR Gradient */
+/*import fonts*/
+/* LIST */
+.h1-home {
+  counter-increment: count;
+  color: #f2f7f5;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 1.5rem;
+  top: 2rem;
+}
+@media (min-width: 1400px) {
+  .h1-home {
+    top: 4.7rem;
+  }
+}
+.h1-home a {
+  color: inherit;
+  text-decoration: none;
+}
+.h1-home a:hover {
+  color: #faae2b;
+}
+
+.span-number {
+  position: absolute;
+  font-family: "Abril Fatface", cursive;
+  color: #B0D6D2;
+  background-image: linear-gradient(142deg, rgb(127, 255, 213) 0%, rgb(127, 255, 213) 25%, rgb(224, 153, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.45;
+  top: 0;
+}
+@media (max-width: 767.98px) {
+  .span-number {
+    font-size: 5rem;
+  }
+}
+
+.title-container {
+  position: relative;
+  padding-bottom: 6rem;
+}
+
+dd {
+  position: relative;
+  margin-bottom: 2vh;
+  max-width: 700px;
+  color: #baf3ed;
+  min-height: 170px;
+  z-index: 999;
+  left: 1.7rem;
+  margin-right: 3rem;
+}
+@media (min-width: 992px) {
+  dd {
+    min-height: 14rem;
+    top: 0.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  dd {
+    min-height: 12rem;
+    top: 3.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

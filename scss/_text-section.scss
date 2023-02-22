@@ -1,26 +1,33 @@
 // SITE SECTIONS
 .text-section {
     z-index: 99999;
-    max-width: 53rem;
+    max-width: 50rem;
     position: relative;
+
+    @include media-breakpoint-up(lg) {
+        padding: 0;
+    }
 
     h1 {
         font-weight: bold;
     }
-
-    img {
+    
+    .figure{
         margin-top: 2.5rem;
-        width: 100%;
-        width: auto;
+        margin-bottom: 2.5rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-left: -2rem;
+            width: 54rem;
+        }
     }
 
     .figure-caption {
         font-size: medium;
         font-family: "PT Sans", sans-serif;
-        margin-bottom: 2.5rem;
     }
 
-    a {
+    a{
         background:
             linear-gradient(to bottom,
                 $primary 0%,
@@ -39,30 +46,6 @@
     }
 }
 
-@include media-breakpoint-up(lg) {
-    .text-section {
-        padding: 0;
-
-        img{
-            margin-left: -3rem;
-            max-width: 56rem;
-            min-width: 56rem;
-        }
-
-        .figure-caption {
-            margin-left: -3rem;
-        }
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    .section-met-campo {
-        .figure{
-            margin-left: 6rem;
-            margin-right: 6rem;
-        }
-    }
-}
 
 [data-tooltip] {
     border-bottom: solid #02923D 2px;

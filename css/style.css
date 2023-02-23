@@ -12048,7 +12048,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   z-index: 2;
   overflow: auto;
   margin-top: -2px;
-  padding-top: 20rem;
+  padding-top: 10rem;
   padding-bottom: 10rem;
 }
 @media (max-width: 1199.98px) {
@@ -12110,12 +12110,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 }
 @media (min-width: 992px) {
   .parallax-text {
-    top: 30vh;
+    top: 10vh;
   }
 }
 @media (min-width: 1400px) {
   .parallax-text {
-    top: 25vh;
+    top: 10vh;
   }
 }
 .parallax-text h1, .parallax-text .h1 {
@@ -12136,9 +12136,33 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
 
 @media (min-width: 1400px) {
   .parallax-text h1, .parallax-text .h1 {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
+.testiculo {
+  color: #f2f7f5;
+  font-size: medium;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 4rem;
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(242, 247, 245, 0.5), transparent);
+}
+
 html {
   overflow-x: hidden;
 }

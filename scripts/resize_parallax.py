@@ -11,4 +11,4 @@ for file in tqdm.tqdm(files_path):
     #     img = img.resize((1440, int(height * 1440 / width)), Image.ANTIALIAS)
     #     img.save(file, optimize=True, quality=50)
     # else:
-    img.save(file, optimize=True, quality=80, method=6, format="WEBP")
+    img.save(file, optimize=True, quality=95, method=6, format="WEBP")
